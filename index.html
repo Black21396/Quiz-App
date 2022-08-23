@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Section to show the final result after the Quiz-->
+    <div class="final">
+        <h3>You answered all questions</h3>
+        <p class="score"></p>
+        <h4>Try again</h4>
+        <button id="again">Again</button>
+    </div>
+
+    <!--Section to show the question with answers (the Quiz)-->
+    <div class="quiz">      
+
+        <!--Section to show the number of current question and the total number of question-->
+        <div class="count">
+            <p class="current"></p>
+            <p>/</p>
+            <p class="total"></p>
+        </div>
+
+        <!--Section show the question and the answers-->
+        <h3 id="question"></h3>
+        <label id="a1" class="container"></label>
+        <label id="a2" class="container"></label>
+        <label id="a3" class="container"></label>
+        <label id="a4" class="container"></label>
+        <button id="next">Submit</button>
+    </div>
+
+    <!--Section to show the settings of the quiz before beginning of quiz-->
+    <div class="settings">
+        <h2 class="settings-header">Quiz Settings</h2>
+
+        <!--Type of question-->
+        <label for="category">Select category:</label>
+        <select name="" id="category">
+            <!--the value of option: I take it from the API (Database of question)-->
+            <option value="9">General knowledge</option>
+            <option value="10">Entertainment: Books</option>
+            <option value="11">Entertainment: Films</option>
+            <option value="12">Entertainment: Music</option>
+            <option value="17">Science and Nature</option>
+            <option value="18">Science: Computer</option>
+            <option value="19">Science: Maths</option>
+            <option value="24">Politics</option>
+            <option value="27">Animals</option>
+            <option value="23">History</option>
+            <option value="21">Sports</option>
+        </select>
+
+        <!--select the level of question (we have 3 levels: easy, medium, hard)-->
+        <div>
+            <label for="difficulty">Difficulty:</label>
+            <label for="easy">
+                <input type="radio" id="easy">
+                Easy
+            </label>
+            <label for="medium">
+                <input type="radio" id="medium">
+                Medium
+            </label>
+            <label for="hard">
+                <input type="radio" id="hard">
+                Hard
+            </label>
+        </div>
+
+        <!--Select the number of questions-->
+        <div>
+            <label for="nQuestions">Number of Questions:</label>
+            <input type="number"  id="nQuestions">
+        </div>
+        <button class="submit" id="startBtn">Start Quiz</button>
+    </div>
+
+    <!--This script to make the Quiz
+        Note: type="module" because I make import to another Javascript files
+        If I remove this property, the App not run 
+    -->
+    <script type="module" src="main.js"></script>
+    
+</body>
+</html>

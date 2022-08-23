@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: azure;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*Style the settings section*/
+.settings{
+    width: 55%;
+    height: 300px;
+    margin: 100px auto;
+    background-color: #200c30;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.settings-header{
+    color: aliceblue;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 4px 2px black;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.settings label{
+    font-size: 20px;
+    margin-right: 40px;
+    margin-bottom: 25px;
+    display: inline-block;
+    color: beige;
+    font-weight: bold;
+}
+
+.settings select,
+.settings input[type="number"]{
+    border: none;
+    width: 165px;
+    height: 20px;
+    border-radius: 5px;
+    color: #200c30;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+}
+
+.settings .submit,
+.quiz #next{
+    border: none;
+    color: #200c30;
+    width: 125px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 3px 3px black;
+    cursor: pointer;
+    float: right;
+    margin-right: 40px;
+}
+
+/*Start the Quiz section (counter and questions)*/
+.quiz{
+    display: none;
+    width: 50%;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #031581;
+    border-radius: 5px;
+    color: #ffecec;
+}
+
+.count{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.count p{
+    display: inline-block;
+    color: #ff00eb;
+    font-size: 20px;
+}
+
+.quiz #question{
+    margin-bottom: 15px;
+}
+
+.quiz #next{
+    border: none;
+    color: #200c30;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+/*Start the "final" question*/
+
+.final{
+    display: none;
+    width: 50%;
+    margin: 100px auto;
+    font-size: 20px;
+    background-color: #2212c9;
+    color: wheat;
+    padding: 20px;
+    text-align: center;
+}
+
+.final #again{
+    margin: 10px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    height: 26px;
+    font-weight: bold;
+    color: blue;
+}
+
+.final h4{
+    margin-top: 10px;
+}
